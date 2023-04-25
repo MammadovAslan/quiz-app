@@ -1,0 +1,74 @@
+.image {
+  position: relative;
+  height: 50%;
+}
+
+.loupe::before,
+.loupe::after,
+.laptop::before,
+.laptop::after {
+  content: "";
+  position: absolute;
+  bottom: 70px;
+}
+/* ------------Loupe------------ */
+.loupe::before,
+.loupe::after {
+  z-index: 100;
+}
+.loupe::before {
+  width: 2.2rem;
+  height: 1px;
+  background-color: var(--black);
+  transform: rotate(-45deg);
+  left: 27px;
+}
+
+.loupe::after {
+  width: 4rem;
+  height: 4rem;
+  left: 50px;
+  border: 1.2px solid var(--black);
+  border-radius: 50%;
+}
+
+/* ------------Laptop------------ */
+.laptop::before {
+  width: 240px;
+  height: 140px;
+  left: 80px;
+  bottom: 20px;
+  background: linear-gradient(360deg, #fbffde 0%, #bfff93 100%);
+  border-radius: 12px 12px 0 0;
+  transform: skew(10deg);
+}
+
+.laptop::after {
+  width: 300px;
+  height: 1px;
+  left: 92px;
+  bottom: 20px;
+  background-color: var(--black);
+}
+
+/* ------------Labels------------ */
+.label {
+  position: absolute;
+  border-radius: 34px;
+  z-index: 100;
+  padding: 9px;
+  left: 200px;
+  bottom: 150px;
+}
+
+.laptop .label:nth-child(1) {
+  transform: rotate(-10deg);
+  background-color: #ffffff;
+  z-index: 200;
+  left: 150px;
+  bottom: 180px;
+}
+.laptop .label:nth-child(2) {
+  transform: rotate(10deg);
+  border: 1px solid var(--black);
+}

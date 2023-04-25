@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="container">
+        <section id="feature-section">
+          <div class="info">
+            <h1 class="title">Подберём вуз мечты</h1>
+            <p class="description">
+              Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас вузов
+            </p>
+          </div>
+          <div class="image">
+            <div class="laptop">
+              <span class="label">Бесплатно</span>
+              <span class="label">за 30 секунд</span>
+              <span class="loupe"></span>
+            </div>
+          </div>
+        </section>
+        <section id="cards-container"></section>
+      </main>
+      <span class="loader"></span>
+
+      <div class="modal-message">
+        <span class="check"><i class="fa-solid fa-check"></i></span>
+        <p class="modal-title">Отлично, спасибо!</p>
+        <p class="modal-text">
+          Мы отправили подборку вам на почту. Если подборка не приходит — проверьте спам, возможно,
+          она попала туда.
+        </p>
+      </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
